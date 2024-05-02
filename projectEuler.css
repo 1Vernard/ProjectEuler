@@ -1,0 +1,7 @@
+.problem_content{
+    background-color: var(--color-background-default);
+    font-size: 110%;
+    border:solid 1px var(--color-border-default);
+    box-shadow: 5px 5px 5px var(--color-border-default);
+    padding: 10px;;
+}

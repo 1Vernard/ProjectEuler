@@ -1,5 +1,5 @@
 
-const answe =document.querySelector("p");
+/*const answe =document.querySelector("p");
 
 
 let prev = 1; // Initialize the previous Fibonacci number
@@ -16,3 +16,4 @@ while (curr <= 4000000) {
 }
 
 answe.textContent=`The sum of even-valued terms in the Fibonacci sequence up to 4 million is: ${sum}`;
+*/
