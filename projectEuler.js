@@ -1,19 +1,34 @@
+//funtion for multiples of 3 or 5
+function multiplesOf3or5(number){
+const arr=[];
+for(let i=0;i<number.length;i++){
+    arr.push(number[i])
+};
+const filteredArr =arr.filter(function(number){
+    return number % 3===0 || number % 5 ===0
+})
 
-/*const answe =document.querySelector("p");
+const sum = filteredArr.reduce((accumulator,initialVlue)=>accumulator + initialVlue, 0)
 
 
-let prev = 1; // Initialize the previous Fibonacci number
-let curr = 2; // Initialize the current Fibonacci number
-let sum = 0; // Initialize the sum of even-valued terms
+return sum;
 
-while (curr <= 4000000) {
-    if (curr % 2 === 0) {
-        sum += curr; // Add the even-valued term to the sum
+
+};
+
+// function for even valued
+  function sumOfEven(n){
+    let a =1;
+    let b =2;
+    let sum =0;
+    while(b<=n){
+let c =a +b;
+ if(c%2===0){sum +=c;}
+        a=b;
+        b=c;
+
     }
-    let next = prev + curr; // Calculate the next Fibonacci number
-    prev = curr; // Update the previous Fibonacci number
-    curr = next; // Update the current Fibonacci number
-}
+    return sum
 
-answe.textContent=`The sum of even-valued terms in the Fibonacci sequence up to 4 million is: ${sum}`;
-*/
+  }
+
